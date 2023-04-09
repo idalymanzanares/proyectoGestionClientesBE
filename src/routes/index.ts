@@ -18,7 +18,7 @@ import { validateJwtMiddleWare } from './middlewares/jwtTokenValidator';
 
 // http://localhost:3001
 router.get('/', (_req, res) => {
-  res.json({ msg: 'Hello World!' });
+  res.json({ msg: 'Gestor de clientes' });
 });
 
 // http://localhost:3001/version
@@ -40,13 +40,13 @@ router.use(
   clientesRouter,
 );
 
-import empresasRouter from './empresas/empresas';
-router.use(
-  '/empresas',
-  validateKeyMiddleWare,
-  validateJwtMiddleWare,
-  empresasRouter,
-);
+//import empresasRouter from './empresas/empresas';
+//router.use(
+//  '/empresas',
+ // validateKeyMiddleWare,
+  //validateJwtMiddleWare,
+ // empresasRouter,
+//);
 
 //import fodaRouter from '';
 //router.use('/foda', validateKeyMiddleWare, validateJwtMiddleWare, fodaRouter);
