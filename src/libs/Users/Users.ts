@@ -43,6 +43,7 @@ export class Users {
     }catch(err){
       console.error(err);
       throw new Error("Can´t Validate Credentials");
+      
     }
   }
 }

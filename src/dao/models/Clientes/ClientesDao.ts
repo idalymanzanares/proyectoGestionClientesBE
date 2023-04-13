@@ -10,4 +10,6 @@ export class ClientesDao extends MongoDAOBase<ICliente> {
         const newCliente = {...DefaultCliente, ...cliente};
         return super.create(newCliente);
     }
+
+
 }
